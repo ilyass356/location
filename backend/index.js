@@ -3,3 +3,10 @@ const mongoose = require('mongoose');//library to connect with Mongo DB database
 
 
 const app = express();//creating an express app
+
+mongoose.connect('mongodb://localhost:27017/mylocal')
+.then(()=>{
+    console.log('connected to mongoDB');
+}).catch(err=>{
+    console.error('Error connecting to mongoDB:',err);
+})
