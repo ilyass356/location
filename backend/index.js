@@ -9,4 +9,6 @@ mongoose.connect('mongodb://localhost:27017/mylocal')
     console.log('connected to mongoDB');
 }).catch(err=>{
     console.error('Error connecting to mongoDB:',err);
-})
+});
+
+app.use(express.json());
