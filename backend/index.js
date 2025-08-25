@@ -1,6 +1,7 @@
 const express = require('express');//framework for node.js to create routes and API
 const mongoose = require('mongoose');//library to connect with Mongo DB database
 
+require('dotenv').config();//access to .env
 
 const app = express();//creating an express app
 
@@ -18,4 +19,5 @@ app.use(express.json());//middleware allows my app to accept the JSON data in re
 app.get('/test', (req,res) => {//get route to test the API is working
     res.send('Welcome to the User API');
 });
+
 
