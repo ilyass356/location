@@ -8,15 +8,15 @@ const userSchema = new mongoose.Schema({//defines the structure of the user
     },
     email:{
         type:String,
-        required:true,
+        required:true
     },
     phone:{
         type:Number,
-        required:true,
+        required:true
     },
-    id:{
+    CIN:{
         type:Number,
-        required:true,
+        required:true
     }
 
 });
