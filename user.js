@@ -1,22 +1,28 @@
 const mongoose = require('mongoose');// connecting to mongodb database
 
 const userSchema = new mongoose.Schema({//defines the structure of the user
+    
     Username:{
         type:String,
         required:true,
-        trim:true
+
+        unique:true
     },
     email:{
         type:String,
-        required:true
+        required:true,
+        unique:true
+        
     },
     phone:{
         type:Number,
-        required:true
+        required:true,
+        unique:true
     },
     CIN:{
         type:Number,
-        required:true
+        required:true,
+        unique:true
     }
 
 });
