@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');// connecting to mongodb database
 
 const userSchema = new mongoose.Schema({//defines the structure of the user
-    fullName:{
+    Username:{
         type:String,
         required:true,
         trim:true
