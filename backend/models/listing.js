@@ -7,6 +7,8 @@ const listSchema = new mongoose.Schema({
     },
     Category:{
         type:String,
+        required:true,
+        enum:['Scooter','Naked','Sport','Adventure','Cruser','Touring','Dirt','Electric']
     },
     Year:{
         type:Number,
