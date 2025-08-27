@@ -7,8 +7,8 @@ const listSchema = new mongoose.Schema({
     },
     Category:{
         type:String,
-        required:true,
-        enum:['Scooter','Naked','Sport','Adventure','Cruser','Touring','Dirt','Electric']
+        enum:['Scooter','Naked','Sport','Adventure','Cruser','Touring','Dirt','Electric'],
+        required:true
     },
     Year:{
         type:Number,
@@ -34,6 +34,10 @@ const listSchema = new mongoose.Schema({
     city:{
         type:String,
         required:true
-    }
+    },
+    createdAT:{
+        type:Date,
+        default:Date.now
+    },
 
 })
