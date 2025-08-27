@@ -29,8 +29,11 @@ const userSchema = new mongoose.Schema({//defines the structure of the user
         required:true
     },
     location:{
-        type:String,
-        
+        type:String
+    },
+    createdAT:{
+        type:Date,
+        default:Date.now
     }
 
 });
