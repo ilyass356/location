@@ -23,6 +23,10 @@ const userSchema = new mongoose.Schema({//defines the structure of the user
         type:Number,
         required:true,
         unique:true
+    },
+    password:{
+        type:String,
+        required:true
     }
 
 });
