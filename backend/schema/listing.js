@@ -8,7 +8,6 @@ const listSchema = new mongoose.Schema({
     Category:{
         type:String,
     },
-
     Year:{
         type:Number,
         required:true
@@ -22,6 +21,9 @@ const listSchema = new mongoose.Schema({
         type:Number,
         required:true,
     },
-
+    Images:{
+        type:[String],
+        required:true
+    }
 
 })
