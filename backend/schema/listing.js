@@ -14,5 +14,9 @@ const listSchema = new mongoose.Schema({
         required:true,
         trim:false
     },
+    Price:{
+        type:Number,
+        required:true,
+    }
 
 })
