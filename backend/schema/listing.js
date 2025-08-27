@@ -5,6 +5,10 @@ const listSchema = new mongoose.Schema({
         type:String,
         required:true
     },
+    Category:{
+        type:String,
+    },
+
     Year:{
         type:Number,
         required:true
@@ -17,6 +21,7 @@ const listSchema = new mongoose.Schema({
     Price:{
         type:Number,
         required:true,
-    }
+    },
+
 
 })
