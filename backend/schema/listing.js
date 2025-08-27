@@ -4,6 +4,10 @@ const listSchema = new mongoose.Schema({
     Brand:{
         type:String,
         required:true
+    },
+    Year:{
+        type:Number,
+        required:true
     }
 
 })
