@@ -24,6 +24,10 @@ const listSchema = new mongoose.Schema({
     Images:{
         type:[String],
         required:true
+    },
+    description:{
+        type:String,
+        required:true
     }
 
 })
