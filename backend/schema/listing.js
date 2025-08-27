@@ -8,6 +8,11 @@ const listSchema = new mongoose.Schema({
     Year:{
         type:Number,
         required:true
-    }
+    },
+    Mileage:{
+        type:Number,
+        required:true,
+        trim:false
+    },
 
 })
