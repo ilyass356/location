@@ -27,6 +27,10 @@ const userSchema = new mongoose.Schema({//defines the structure of the user
     password:{
         type:String,
         required:true
+    },
+    location:{
+        type:String,
+        
     }
 
 });
