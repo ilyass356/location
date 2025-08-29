@@ -1,6 +1,6 @@
 const express = require('express');//framework for node.js to create routes and API
 const mongoose = require('mongoose');//library to connect with Mongo DB database
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 5000 //access to the PORT from dotenv
 
 require('dotenv').config();//access to .env
 
@@ -18,7 +18,7 @@ app.use(express.json());//middleware allows my app to accept the JSON data in re
 //app.use('/',User);//this tells express to use the router for any req starting with "/"
 
 app.get('/test', (req,res) => {//get route to test the API is working
-    res.send('Welcome to the User API');
+    res.send({message:'welcome to my API'});
 });
 
 app.listen(port,() => console.log(`server start on ${port}`))
