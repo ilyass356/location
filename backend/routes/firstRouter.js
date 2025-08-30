@@ -1,19 +1,13 @@
 const express = require('express')
 const router = express.Router()
-const {getRoutes} = require('../controllers/firstController')
+const {getRoutes, postRoutes, putRoutes, deleteRoutes} = require('../controllers/firstController')
 
 router.get('/', getRoutes );
 
-router.post('/', (req,res) => {
-    res.json({message:'create an API'});
-});
+router.post('/', postRoutes );
 
-router.put('/:id', (req,res) => {
-    res.json({message:`update an API for ${req.params.id}`});
-});
+router.put('/:id', putRoutes);
 
-router.delete('/:id', (req,res) => {
-    res.json({message:`delete an API ${req.params.id}`});
-});
+router.delete('/:id', deleteRoutes);
 
 module.exports = router
