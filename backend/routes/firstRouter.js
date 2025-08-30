@@ -2,9 +2,7 @@ const express = require('express')
 const router = express.Router()
 const {getRoutes} = require('../controllers/firstController')
 
-router.get('/', (req,res) => {
-    res.json({message:'welcome to my API'});
-});
+router.get('/', getRoutes );
 
 router.post('/', (req,res) => {
     res.json({message:'create an API'});
