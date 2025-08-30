@@ -14,7 +14,7 @@ router.put('/:id', (req,res) => {
 });
 
 router.delete('/:id', (req,res) => {
-    res.json({message:'delete an API'});
+    res.json({message:`delete an API ${req.params.id}`});
 });
 
 module.exports = router
