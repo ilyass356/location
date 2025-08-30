@@ -17,7 +17,7 @@ app.use(express.json());//middleware allows my app to accept the JSON data in re
 
 //app.use('/',User);//this tells express to use the router for any req starting with "/"
 
-app.use('/',require('./routes/firstController'))
+app.use('/test',require('./routes/firstController'))
 
 app.listen(port,() => console.log(`server start on ${port}`))//express.js method that starts a server and makes it listen to HTTP req
 
