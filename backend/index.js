@@ -14,6 +14,7 @@ mongoose.connect('mongodb://localhost:27017/mylocal')//connect to a local mongoD
 });
 
 app.use(express.json());//middleware allows my app to accept the JSON data in requests
+app.use(express.urlencoded({extended:false})) //let express handle forms and puts the result into a req.body
 
 //app.use('/',User);//this tells express to use the router for any req starting with "/"
 
