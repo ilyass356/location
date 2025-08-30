@@ -1,7 +1,19 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/', (req,res) => {//get route to test the API is working
+router.get('/', (req,res) => {
+    res.json({message:'welcome to my API'});
+});
+
+router.get('/', (req,res) => {
+    res.json({message:'welcome to my API'});
+});
+
+router.get('/', (req,res) => {
+    res.json({message:'welcome to my API'});
+});
+
+router.get('/', (req,res) => {
     res.json({message:'welcome to my API'});
 });
 
