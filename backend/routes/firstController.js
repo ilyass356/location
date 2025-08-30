@@ -10,7 +10,7 @@ router.post('/', (req,res) => {
 });
 
 router.put('/:id', (req,res) => {
-    res.json({message:'update an API'});
+    res.json({message:`update an API for ${req.params.id}`});
 });
 
 router.delete('/:id', (req,res) => {
