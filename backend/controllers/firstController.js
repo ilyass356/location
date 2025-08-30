@@ -27,4 +27,4 @@ const deleteRoutes = (req , res) => {
 
 
 
-module.exports = {getRoutes,}
+module.exports = {getRoutes,postRoutes,putRoutes,deleteRoutes}
